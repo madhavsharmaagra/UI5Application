@@ -1,0 +1,30 @@
+<mvc:View
+	controllerName="sampleAppUI5Application.controller.AppController"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+		<content>
+				<List
+					growing="true"
+					growingThreshold="10"
+					busyIndicatorDelay="500"
+					enableBusyIndicator="true"
+					noDataText="No products available"
+					items="{path: '/photos'}">
+					<headerToolbar>
+						<Toolbar>
+							<Title text="{i18n>listTitle}" level="H2" />
+							<ToolbarSpacer />
+							<Button	icon="sap-icon://synchronize" press="refreshDataFromBackend"/>
+						</Toolbar>
+					</headerToolbar>
+					<StandardListItem
+						title="{id}"
+						description="{title}"
+						icon="{url}"
+						type="Navigation"
+						press="onNaviToAnother"/>
+				</List>
+		</content>
+	</Page>
+</mvc:View>

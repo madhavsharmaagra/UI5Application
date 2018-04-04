@@ -1,0 +1,42 @@
+<mvc:View
+	controllerName="sampleAppUI5Application.controller.DetailsPage"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+	<Page
+		id="detailPage"
+		title="{i18n>addDetailPageTitle}"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+		<f:SimpleForm id="SimpleFormDisplay354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Details of the list"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content >
+				<Label text="Name" />
+				<Text id="nameText" text="{SupplierName}" />
+				<Label text="Street/No." />
+				<Text text="{Street} {HouseNumber}" />
+				<Label text="ZIP Code/City" />
+				<Text text="{ZIPCode} {City}" />
+				<Label text="Country" />
+				<Text id="countryText" text="{Country}" />
+			</f:content>
+		</f:SimpleForm>
+	</Page>
+
+</mvc:View>
