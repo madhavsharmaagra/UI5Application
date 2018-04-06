@@ -1,7 +1,8 @@
 <mvc:View
 	controllerName="sampleAppUI5Application.controller.AppController"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
 	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
 		<content>
 				<List
@@ -24,7 +25,34 @@
 						icon="{url}"
 						type="Navigation"
 						press="onNaviToAnother"/>
+					<!--<StandardListItem
+						title="{id}"
+						description="{title}"
+						icon="{url}"
+						type="Navigation"
+						press="onItemSelected"/>-->
 				</List>
+				<Panel id="detailsPanel"
+					headerText="Details Panel"
+					visible="false">
+					<l:Grid>
+						<l:content>
+							<Image src="{url}" width="100%">
+								<layoutData>
+									<l:GridData
+										span="L3 M3 S8"
+										linebreakL="true"
+										linebreakM="true"
+										linebreakS="true" />
+								</layoutData>
+							</Image>
+							<VBox>
+								<Text text="{title}" class="nameTitle" />
+								<Text text="{id}" />
+							</VBox>
+						</l:content>
+					</l:Grid>
+				</Panel>
 		</content>
 	</Page>
 </mvc:View>

@@ -90,7 +90,7 @@
 				"target": "home"
 			},
 			{
-				"pattern": "detailsPage",
+				"pattern": "detailsPage/{photoId}",
 				"name": "detailsPage",
 				"target": "detailsPage"
 			}],

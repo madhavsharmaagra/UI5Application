@@ -9,34 +9,27 @@
 		title="{i18n>addDetailPageTitle}"
 		showNavButton="true"
 		navButtonPress="onNavBack">
-		<f:SimpleForm id="SimpleFormDisplay354"
-			editable="true"
-			layout="ResponsiveGridLayout"
-			title="Details of the list"
-			labelSpanXL="3"
-			labelSpanL="3"
-			labelSpanM="3"
-			labelSpanS="12"
-			adjustLabelSpan="false"
-			emptySpanXL="4"
-			emptySpanL="4"
-			emptySpanM="4"
-			emptySpanS="0"
-			columnsXL="1"
-			columnsL="1"
-			columnsM="1"
-			singleContainerFullSize="false" >
-			<f:content >
-				<Label text="Name" />
-				<Text id="nameText" text="{SupplierName}" />
-				<Label text="Street/No." />
-				<Text text="{Street} {HouseNumber}" />
-				<Label text="ZIP Code/City" />
-				<Text text="{ZIPCode} {City}" />
-				<Label text="Country" />
-				<Text id="countryText" text="{Country}" />
-			</f:content>
-		</f:SimpleForm>
+		<Panel id="detailsPanel"
+			headerText="Details Panel"
+			visible="false">
+			<l:Grid>
+				<l:content>
+					<Image src="{url}" width="100%"/>
+					<VBox>
+						<Text text="{title}" class="nameTitle" />
+						<Text text="{id}" />
+					</VBox>
+				</l:content>
+			</l:Grid>
+		</Panel>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button id="edit" text="Edit" press="handleEditPress" />
+					<Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress" />
+					<Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
+				</contentRight>
+			</Bar>
+		</footer>
 	</Page>
-
 </mvc:View>
