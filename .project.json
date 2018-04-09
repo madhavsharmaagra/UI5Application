@@ -39,6 +39,12 @@
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
-    "excludedFiles": []
+    "excludedFiles": [],
+    "lastBuildDateTime": "Fri, 06 Apr 2018 11:56:07 GMT"
+  },
+  "hcpdeploy": {
+    "account": "p2000151524trial",
+    "name": "ui5application",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }

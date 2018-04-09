@@ -17,7 +17,7 @@ sap.ui.define([
 			    	"url": "",
 			    	"thumbnailUrl": ""
 				}],
-				details: {
+				edits: {
 					"albumId": "",
 			    	"id": "",
 			    	"title": "",

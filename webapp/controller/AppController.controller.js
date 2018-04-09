@@ -71,7 +71,7 @@ sap.ui.define([
 			//This function is enabling the route to the detail page when list element is selected
 			onNaviToAnother: function(oEvent){
 				//var seletedItemId=oEvent.getSource().getBindingContext().getProperty("id");
-				var seletedItemId=oEvent.getSource().getBindingContext().getPath();
+				var seletedItemId = oEvent.getSource().getBindingContext().getPath();
 				//console.log("before regEx: " + seletedItemId);
 				seletedItemId = seletedItemId.replace(/[^\d.]/g, "");
 				//console.log("after regEx: " + seletedItemId);
@@ -82,7 +82,6 @@ sap.ui.define([
 			// Implementing the Refresh Button
 			refreshDataFromBackend: function(oEvent){
 				window.setTimeout(this._onLoadJson(), 10000);
-				
 			}
 	});
 });

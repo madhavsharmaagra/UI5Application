@@ -22,7 +22,7 @@
 					<StandardListItem
 						title="{id}"
 						description="{title}"
-						icon="{url}"
+						icon="{thumbnailUrl}"
 						type="Navigation"
 						press="onNaviToAnother"/>
 					<!--<StandardListItem

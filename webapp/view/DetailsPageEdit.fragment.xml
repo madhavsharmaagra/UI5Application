@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form">
+	<Panel id="detailsPanelEdit"
+		headerText="Details Panel"
+		visible="true">
+		<form:SimpleForm editable="true">
+			<Label text="ValueLiveUpdate"/>
+			<Switch state="{/ValueLiveUpdate}"/>
+			<Label text="Body description"/>
+			<Input id="TypeHere"
+				value="{title}"
+			/>
+			<Label text="User Id"/>
+			<Text id="getProperty"
+				text="{id}"
+			/>
+		</form:SimpleForm>
+	</Panel>
+</core:FragmentDefinition>

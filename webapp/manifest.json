@@ -14,7 +14,6 @@
 			"version": "1.40.12"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -33,10 +32,8 @@
 		"supportedThemes": [
 			"sap_hcb",
 			"sap_belize"
-
 		]
 	},
-
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "sampleAppUI5Application.view.App",
@@ -67,9 +64,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -84,26 +83,28 @@
 					"target": "notFound"
 				}
 			},
-			"routes": [{
-				"pattern": "",
-				"name": "app",
-				"target": "home"
-			},
-			{
-				"pattern": "detailsPage/{photoId}",
-				"name": "detailsPage",
-				"target": "detailsPage"
-			}],
+			"routes": [
+				{
+					"pattern": "",
+					"name": "app",
+					"target": "home"
+				},
+				{
+					"pattern": "detailsPage/{photoId}",
+					"name": "detailsPage",
+					"target": "detailsPage"
+				}
+			],
 			"targets": {
 				"home": {
 					"viewId": "home",
 					"viewName": "HomePage",
-					"viewLevel" : 1
+					"viewLevel": 1
 				},
 				"detailsPage": {
 					"viewId": "DetailsPage",
 					"viewName": "DetailsPage",
-					"viewLevel" : 2
+					"viewLevel": 2
 				},
 				"notFound": {
 					"viewName": "NotFound",
@@ -111,5 +112,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }

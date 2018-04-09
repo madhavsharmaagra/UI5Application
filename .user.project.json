@@ -15,7 +15,25 @@
         "runnerId": "webapprunner",
         "id": 3885610,
         "displayName": "Run index.html",
-        "lastRunTimeStamp": 1522830333719
+        "lastRunTimeStamp": 1523278599488
+      }
+    },
+    {
+      "filePath": "/webapp/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 1344208,
+        "displayName": "Run Component.js",
+        "lastRunTimeStamp": 1523012942094
       }
     }
   ]

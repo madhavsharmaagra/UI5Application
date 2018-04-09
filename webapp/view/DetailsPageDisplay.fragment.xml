@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout">
+	<VBox class="sapUiSmallMargin">
+		<Panel id="detailsPanelDisplay"
+			headerText="Details Panel Display Values"
+			visible="true">
+			<l:Grid>
+				<l:content>
+					<Image src="{url}" width="100%"	decorative="false"
+						densityAware="false">
+					</Image>
+					<VBox>
+						<Text text="{title}" class="nameTitle" />
+						<Text text="{id}" />
+					</VBox>
+				</l:content>
+			</l:Grid>
+		</Panel>
+	</VBox>
+</core:FragmentDefinition>
